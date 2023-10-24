@@ -21,6 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
+app.use(express.static(path.join(__dirname, 'partials')));
 
 app.use('/', indexRouter); // localhost:3000/
 app.use('/users', usersRouter);// localhost:3000/users
