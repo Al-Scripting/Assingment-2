@@ -1,16 +1,21 @@
 <%- include('partials/header.ejs') %>
 <%- include('partials/main_nav.ejs') %>
 
-    <!-- Content -->
-    <main>
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Welcome to <%= title %> page</h1>
-            </div>
-        </div>
-    </main>
-    <!-- Content -->
+<!-- Content -->
+<% if (title == "Home") {%>
+    <%- include('partials/hero.ejs') %>
+    <%- include('partials/home.ejs') %>
+
+<%} if (title == "About") {%>
+    <%- include('partials/about.ejs') %>
+
+<%} if (title == "Projects") {%>
+    <%- include('partials/projects.ejs') %>
+
+<%} if (title == "Contact") {%>
+    <%- include('partials/contact.ejs') %>
+<%}%>
+<!-- Content -->
 
 <%- include('partials/bottom_nav.ejs') %>
 <%- include('partials/footer.ejs') %>
-
