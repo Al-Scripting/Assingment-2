@@ -2,19 +2,21 @@
 <%- include('partials/main_nav.ejs') %>
 
 <!-- Content -->
-<% if (title == "Home") {%>
+<div id="home">
     <%- include('partials/hero.ejs') %>
-    <%- include('partials/home.ejs') %>
+</div>
 
-<%} if (title == "About") {%>
+<div id="about">
     <%- include('partials/about.ejs') %>
+</div>
 
-<%} if (title == "Projects") {%>
+<div id="projects">
     <%- include('partials/projects.ejs') %>
+</div>
 
-<%} if (title == "Contact") {%>
+<div id="contact">
     <%- include('partials/contact.ejs') %>
-<%}%>
+</div>
 <!-- Content -->
 
 <%- include('partials/bottom_nav.ejs') %>

@@ -26,6 +26,12 @@ app.use(express.static(path.join(__dirname, 'partials')));
 app.use('/', indexRouter); // localhost:3000/
 app.use('/users', usersRouter);// localhost:3000/users
 
+app.get('/', (req, res) => {
+  const title = 'Your Page Title'; // Define your title here
+  res.render('index', { title: title }); // 'index' is your main template file (e.g., index.ejs)
+});
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
