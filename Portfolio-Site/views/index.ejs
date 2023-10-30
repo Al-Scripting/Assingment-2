@@ -3,19 +3,194 @@
 
 <!-- Content -->
 <div id="home">
-    <%- include('partials/hero.ejs') %>
+    <!-- Hero Section-->
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <!-- Left column containing text content -->
+                <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+                    <div data-aos="zoom-out">
+                        <!-- Main heading and subheading -->
+                        <h1>THIS IS <br> <span> Al Muqshith Shifan </span></h1>
+                        <h2>A jack of all trades is a master of none, but often times better than a master of one.</h2>
+
+                        <!-- Call-to-action buttons -->
+                        <div class="d-lg-flex">
+                            <a href="#about" class="btn-get-started">About</a>
+                            <a href="#projects" class="btn-projects">Projects</a>
+                            <a href="#contact" class="btn-contacts">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right column containing the hero image -->
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                    <!-- Hero image displayed on the right side -->
+                    <img src="Assets/images/hero-img.png" class="img-fluid animated" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section-->
 </div>
 
 <div id="about">
-    <%- include('partials/about.ejs') %>
+    <section id="about">
+        <div class="about">
+            <div class="about-content">
+                <!-- Main heading, subheading, and description -->
+                <h1>Hi, I'm Al</h1>
+                <h3>Ontario Tech Student</h3>
+                <p>"A dedicated and inquisitive coder on a perpetual quest to create, innovate, and explore the endless possibilities of technology. Nestled in the heart of Ontario, Canada, I've embarked on an exciting journey as a student at Ontario Tech University, where I'm honing my skills in Networking and IT Programming."</p>
+
+                <!-- Buttons and social media icons -->
+                <div id="adjustment">
+                    <div class="btn-box">
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Let's Talk</a>
+                    </div>
+                    <div class="about-sci">
+                        <a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                        <a href=""><i class="fa-brands fa-github fa-2xl"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    </div>
+                </div>
+
+                <!-- Video container with a poster image -->
+                <div class="video-container">
+                    <video controls poster="Assets/images/about-thumbnail.png">
+                        <source src="Assets/videos/About.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <!-- Profile picture section -->
+            <div class="profile-picture-container">
+                <div id="adjustment_2">
+                    <!-- Background photo and personal picture -->
+                    <img src="Assets/images/circle-background.webp" alt="Background Photo" class="background-photo">
+                    <img src="Assets/images/about-me.png" alt="Personal Picture" class="profile-picture">
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 <div id="projects">
-    <%- include('partials/projects.ejs') %>
+    <!-- Project Section-->
+    <section id="projects">
+        <!-- Header for the Projects section -->
+        <header>
+            <h1>Projects</h1>
+        </header>
+        <!-- Container to hold project boxes -->
+        <div class="container">
+            <!-- Project Box 1 -->
+            <div class="box">
+                <h2>Loan Payment Calculator</h2>
+                <div class="content">
+                    <!-- Description of the first project -->
+                    <p>Using Python and the tkinter module for creating graphical user interfaces (GUIs),
+                        I created a convenient loan payment calculator. By entering your yearly interest rate,
+                        the number of years for your loan term, and the loan amount, you can simply calculate your monthly and total loan payments.
+                        Simply input your information in the appropriate text entry sections, click the "Calculate" button,
+                        and watch as it calculates and shows your monthly and total payments in real time.
+                        This easy-to-use interface streamlines the procedure and delivers instant financial information.
+                        Whether you're considering a mortgage or a personal loan, this calculator can help you make educated financial decisions.</p>
+                </div>
+                <!-- Image related to the first project -->
+                <img src="/Assets/images/Project1.png" alt="Project 1">
+            </div>
+
+            <!-- Project Box 2 -->
+            <div class="box">
+                <h2>Drawing Application</h2>
+                <div class="content">
+                    <!-- Description of the second project -->
+                    <p>Using Python's tkinter and turtle graphics packages,
+                        I constructed a captivating heart painting program.
+                        With this charming script, you may watch as a heart form is displayed nicely on your screen.
+                        The heart is aesthetically appealing since it is designed with a sequence of curves
+                        and filled with a brilliant crimson color.
+                        A "Hey" message is also tastefully put at the bottom of the heart.
+                        The entire process is a fusion of art and code, demonstrating Python's creative ability in making spectacular visual effects.
+                        When you run this code, you'll see an artistic masterpiece come to life on your computer screen, due to Python's flexible libraries.</p>
+                </div>
+                <!-- Image related to the second project -->
+                <img src="/Assets/images/Project2.png" alt="Project 2">
+            </div>
+
+            <!-- Project Box 3 -->
+            <div class="box">
+                <h2>The Water Body Photograph</h2>
+                <div class="content">
+                    <!-- Description of the third project -->
+                    <p>This magnificent image was obtained on a peaceful afternoon stroll in the center of nature's magnificence.
+                        The sparkling body of water,
+                        glittering in the sun's warm embrace, mirrors the world in its crystal-clear depths.
+                        The surrounding lush vegetation lends a bright tranquillity to the image,
+                        as if Mother Nature herself lovingly created this magnificent masterpiece.
+                        The soft ripples on the water's surface tell tales of quiet and tranquillity,
+                        making this image a genuine expression of the beauty
+                        that resides at the core of our natural world,
+                        and I am grateful for the opportunity to capture this moment via my lens.</p>
+                </div>
+                <!-- Link and image related to the third project -->
+                <a href="https://www.instagram.com/p/CRoWD4_Ba6h/?igshid=MzRlODBiNWFlZA=="><img src="Assets/images/Project3.jpg" alt="Project 3"></a>
+            </div>
+        </div>
+    </section>
+    <!-- Project Section-->
 </div>
 
 <div id="contact">
-    <%- include('partials/contact.ejs') %>
+    <!-- This section contains a form for users to contact the website owner. -->
+    <section class="contact" id="contact">
+
+        <!-- Heading for the contact section -->
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <!-- Form element starts here -->
+        <form action="#">
+            <!-- Input fields for user information -->
+            <div class="input-box">
+                <div class="input-field">
+                    <!-- Input field for full name -->
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="input-field">
+                    <!-- Input field for email address -->
+                    <input type="text" placeholder="Email Address" required>
+                </div>
+                <div class="input-field">
+                    <!-- Input field for mobile number -->
+                    <input type="text" placeholder="Mobile Number" required>
+                </div>
+                <div class="input-field">
+                    <!-- Input field for company name -->
+                    <input type="text" placeholder="Company" required>
+                </div>
+
+                <!-- Textarea for user to input their message -->
+                <div class="textarea-field">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <!-- A span element for styling the textarea focus effect -->
+                    <span class="focus"></span>
+                </div>
+
+                <!-- Submission button for the form -->
+                <div class="sub-box">
+                    <button>Submit</button>
+                </div>
+
+            </div>
+
+        </form>
+        <!-- Form element ends here -->
+
+    </section>
+    <!-- Contact section ends here -->
 </div>
 <!-- Content -->
 
