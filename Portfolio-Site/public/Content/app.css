@@ -1,14 +1,15 @@
-
+/* Apply smooth scrolling to all elements with an anchor link */
 html {
     scroll-behavior: smooth;
 }
 
-
+/* Set font and text color for the entire body */
 body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
 }
 
+/* Style hyperlinks and their hover effect */
 a {
     color: #47b2e4;
     text-decoration: none;
@@ -16,51 +17,36 @@ a {
 
 a:hover {
     color: #73c5eb;
-
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* Define font family for heading elements */
+h1, h2, h3, h4, h5, h6 {
     font-family: "Trebuchet MS", sans-serif;
 }
 
-
-
-/*--------------------------------------------------------------
-# Top Navbar Style
---------------------------------------------------------------*/
-/* CSS Styling for NavBar */
+/* Style the top navigation bar */
 .navbar {
-    background-color: rgb(52, 48, 48); /* semi-transparent background */
+    background-color: rgba(52, 48, 48, 0.8);
     z-index: 1000;
 }
 
+/* Style the brand/logo in the navbar */
 .navbar-brand {
-    font-size: 1.5rem; /* increase the font size */
-
+    font-size: 1.5rem;
 }
 
-
+/* Style navigation links in the top bar */
 .navbar-nav .nav-link {
     color: #746366;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #f45b69; /* fully opaque link text color on hover */
+    color: #f45b69;
 }
 
-/*--------------------------------------------------------------
-# Bottom Navbar Style
---------------------------------------------------------------*/
+/* Style icons and active links in the bottom navbar */
 .navbar-icons {
     margin-right: 5%;
-}
-
-.navbar-icons {
     display: flex;
     align-items: center;
     width: 30px;
@@ -71,24 +57,22 @@ h6 {
     margin-right: 10px;
 }
 
-
 .navbar-nav .nav-item.active .nav-link {
-    color: #ffcc00; /* Change this to your desired active link color */
+    color: #ffcc00;
 }
 
-
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+/* General styling for sections */
 section {
     padding: 60px 0;
     overflow: hidden;
 }
 
+/* Set background color for sections with class 'section-bg' */
 .section-bg {
     background-color: #f3f5fa;
 }
 
+/* Style section titles */
 .section-title {
     text-align: center;
     padding-bottom: 30px;
@@ -99,11 +83,11 @@ section {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
-    padding-bottom: 20px;
     position: relative;
     color: #37517e;
 }
 
+/* Add decorative lines before and after section titles */
 .section-title h2::before {
     content: "";
     position: absolute;

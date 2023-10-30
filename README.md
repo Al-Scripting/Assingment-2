@@ -29,7 +29,7 @@ https://fonts.google.com
 Picture Source:
 hero-img.png: https://pngtree.com/so/jdm-cars-clipart | PNGTREE
 Video Poster: https://mojoe.net/personal-brand/ | MOJOE 
-Cricle Background: 
+Cricle Background: https://pokerk.com/poker-games/nft-avatars/ | Circle
 
 
 Video:
