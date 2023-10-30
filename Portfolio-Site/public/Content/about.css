@@ -1,0 +1,191 @@
+/* Style the about section */
+#about{
+    background: linear-gradient(to top right, #F6E8EA, #22181C);
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 100);
+}
+
+/* Style content within the about section */
+.about{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    align-items: center;
+    padding: 0 10%;
+}
+/* Style headings and paragraphs in the about section */
+.about-content{
+    font-family: 'Poppins', sans-serif;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.about-content h1{
+    color:#5a0001;
+    font-family: 'Poppins', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.about-content h3{
+    color: #f13030;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.about-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+}
+
+.about-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+
+.btn-box {
+    position: relative; /* Add relative positioning to the btn-box */
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+/* Style buttons in the about section */
+.btn-box a{
+    color: #22181C;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background:  #F6E8EA;
+    border: 2px solid rgba(34, 24, 28, 0.5);
+    border-radius: 8px;
+    font-size: 19px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+/* Button hover effect */
+.btn-box a:nth-child(2){
+    background: transparent;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #f45b69;
+    z-index: -1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover{
+    color: #22181C;
+}
+
+
+.btn-box a:hover::before{
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Style social media icons */
+.about-sci {
+    position: relative;
+    width: 130px;
+    margin: 2.5px;
+    padding: 2.5px;
+    left: 2%;
+    z-index:2;
+    display: flex;
+}
+
+.about-sci a {
+    padding-top: 3px;
+    margin: 5px;
+    color: #F6E8EA;
+
+}
+.about-sci a:hover{
+    color: #f45b69;
+}
+
+/* Style profile picture and video container */
+.profile-picture-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.background-photo {
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+    opacity: 70%;
+    height: 100%;
+    object-fit: contain; /* Ensures the background image covers the entire container */
+}
+
+.profile-picture {
+    position: relative;
+     /* Adjust left position as needed */
+    z-index:3;
+    left: 26%;
+    top: -105%;
+    height: 90%;
+    border-radius: 50%; /* Optional: Round the corners for a circular photo */
+}
+
+.video-container {
+    position: relative;
+    left: 0;
+    padding-top: 30px     ;
+    width: 40%; /* Set the width of the video container */
+    max-width: 800px; /* Optional: Set a maximum width for the video container */
+    /* Center the video container on the page */
+}
+
+.video-container video{
+    border-radius: 50px;
+    background: #22181C ;
+    width: 100%;
+    height: 20%;
+    box-shadow:  0 7px 7px #22181C;
+}
+
+/* Additional adjustments for layout */
+#adjustment
+{
+    display: flex;
+    flex-direction: row;
+}
+#adjustment_2
+{
+    align-content: center;
+    display: block;
+    box-sizing: border-box;
+    justify-content: center;
+}

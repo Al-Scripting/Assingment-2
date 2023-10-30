@@ -1,0 +1,11 @@
+/* Bottom Nav */
+.navbar-icons a i {
+    color: #F6E8EA; /* Set the default icon color */
+    transition: transform 0.3s ease, color 0.3s ease; /* Add smooth transition for transform and color */
+}
+
+/* Change icon size and color on hover */
+.navbar-icons a:hover i {
+    transform: scale(1.2); /* Scale up the icon on hover */
+    color: #f45b69; /* Change the icon color on hover to the desired color */
+}
